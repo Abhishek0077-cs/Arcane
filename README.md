@@ -14,6 +14,26 @@ it uses context and can be used as a legal consultant , huh no it can't generate
 for writting Notary , but it will in future . 
 
 
-Here is its code flow :-
+Here is its work flow :-
+            user uploads the data into pdf format
+                         ||
+                         ||
+                         ||
+             vector DB breaks into chuncks and 
+                         ||
+                         ||
+                         ||
+              Huggingface interface embeds it 
+                         ||
+                         ||
+                         ||
+                context is used under the prompt if the
+                query asked is relevant then the Answered 
+                otherwise "not answerable"
+                         ||
+                         ||
+                         ||
+                  user types "exit" to get out from the loop 
+   
 
 
