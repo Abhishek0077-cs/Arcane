@@ -14,6 +14,12 @@ it uses context and can be used as a legal consultant , huh no it can't generate
 for writting Notary , but it will in future . 
 
 
+
+Here is the live demo of Arcane
+at railway:-"arcane-production-82cd.up.railway.app"
+at Hugging-face:-"https://huggingface.co/spaces/Invictus0091/Arcane-rag"
+
+
 Here is its work flow :-
             user uploads the data into pdf format
                          ||
