@@ -15,20 +15,16 @@ groq_api_key = os.getenv("GROQ_API_KEY")
 if not groq_api_key:
     raise RuntimeError("GROQ_API_KEY is not set. Add it to pdf.env or .env and keep it out of git.")
 
-class UploadPDF:
-    def __init__(self, file_path):
-        self.file_path = file_path
 
-    def load_pdf(self):
-        loader = PyPDFLoader(self.file_path)
-        return loader.load()
     
 
 
 def main():
     # Load the PDF document
-    pdf_uploader = UploadPDF("chat.pdf")
-    documents = pdf_uploader.load_pdf()
+    loader = PyPDFLoader(pdf_path)
+    documents = loader.load()
+
+   
 
     # Split the document into chunks
     text_splitter = RecursiveCharacterTextSplitter(chunk_size=1000, chunk_overlap=200)
